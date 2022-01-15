@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type = "text" id="jumlah"></input>
+    <button onclick=submit()>lihat</button>
+    <p id="hari"></p>
+    <script>
+        function submit(){
+            var hari = document.getElementById("hari").value;
+
+            switch(hari){
+                case "Senin":
+                    text="Hari Senin";
+                break;
+                case "Selasa":
+                    text="Hari Selasa";
+                break;
+                case "Rabu":
+                break;
+                    text="Hari Rabu";
+                 break;
+                case "Kamis":
+                    text="Hari Kamis";
+                    break;
+                case "Jum'at":
+                    text="Hari Jum'at";
+                    break;
+                case "Sabtu":
+                    text="Hari Sabtu";
+                    break;
+                case "Minggu":
+                    text="Hari Minggu";
+                    break;
+                default:
+                    text="Hari Tidak Ada"
+            
+        
+        document.getElementById("hari").innerHTML = text;
+        }
+    }
+    </script>
+      
+</body>
+</html>
